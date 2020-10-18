@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="/stylesheet/style.css" type="text/css" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<script type="text/javascript" src="/js/main.js"></script>
+	<title>My card</title>
+</head>
+<body>
+
+<header class="border_width">
+  <h1 class="border_text">MY CARD</h1>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <h1 class="glav_text">Information</h1>
+
+		<div class="container">
+		  <div class="row">
+		    <div class="col-sm">
+		      <p class="p_inf"> Surname</p>
+			  <p class="p_inf"> Given name</p>
+			  <p class="p_inf"> Nationality</p>
+			  <p class="p_inf"> Date of birth</p>
+			  <p class="p_inf"> Hometown</p>
+			  <p class="p_inf"> Languages</p>
+			  <p class="p_inf"> Ralationship status </p>
+
+			<button type="button" class="btn btn-warning" onclick="InformationTask4()"> Show information about study</button>
+			<div id="task4" class="p_inf"></div>
+			<br />
+			<br />
+			<br />
+			<p> <a href="#Information">Additional information  about me</a> </p>
+			<p> <a href="#Work with butten">Tasks for second laba</a></p>
+		    </div>
+		    <div class="col-sm">
+		      <p> Gerasimenko</p>
+			  <p> Svetlana Andreevna</p>
+			  <p> Russian Federetion</p>
+			  <p> 14.05.2000</p>
+			  <p> Russia, Peresvet</p>
+			  <p> Русский, English</p>
+			  <p> Single</p>
+			  <button type="button" class="btn btn-warning" onclick="InformationTask41()"> Hide information about study</button>
+			  <div id="task41"></div>
+		    </div>
+		  </div>
+		</div>
+
+    </div>
+    <div class="col-4">
+      <img src="/images/Girls.jpg"  width="600" height="660" >
+    </div>
+  </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a name="Information"> </a>
+ <div class="overlay"> <h1 class="glav_text">Additional information  about me</h1></div>
+
+<p class="p_info">Меня зовут Светлана Герасименко. Я студентка 3 курса Московского государственного университета Станкин.</p>
+
+<p class="p_info">Первое школьное сочинение на тему «О себе» — прекрасная возможность задуматься над вечными вопросами: Кто я? Какой я? Что мне интересно? Отчего мне хорошо? Отчего мне плохо? Чего я хочу? К чему стремлюсь? Что я ценю? Кого люблю? и т. д. Вопросов много и вариант ответа у каждого свой. Задавать вопросы и искать на них ответы, учиться думать и познавать в первую очередь себя, формулировать и записывать свои мысли полезно с детства. Писательство, вообще, деятельность терапевтическая. С его помощью можно усиливать свои положительные эмоции, отрицательные же эмоции, неприятные чувства удается подобным образом контролировать.</p>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<a name="Work with butten"> </a>
+<div class="overlay"> <h1 class="glav_text">Tasks for second laba</h1></div>
+
+<h2>The task 1</h2>
+<p class="p_info">Click on the button several times, and the website mill count how many times you clicked</p>
+<div class="left">
+	<button type="button" class="btn btn-warning" onclick="++firstCounterTask1"> Click </button>
+	<button type="button" class="btn btn-warning" onclick="resultTask1(firstCounterTask1)">Result</button>
+</div>
+<div id="task1"></div>
+<br />
+<br />
+
+
+<h2>The task 2</h2>
+<p class="p_info"> Input two numbers and get the sum</p>
+  First counter:<br>
+  <input type="text" id="firstCounterTask2" name="firstCounterTask2">
+  <br>
+  Second counter:<br>
+  <input type="text" id="secondCounterTask2" name="secondCounterTask2">
+<br />
+<br />
+    <button type="button" class="btn btn-warning" onclick="resultTask2()"> Calculate</button>
+	<div id="task2"></div>
+
+
+
+<br />
+<br />
+<h2>The task 3</h2>
+<p class="p_info"> Input an array and get an array of sguares of numbers</p>
+		  First counter:<br>
+		  <input type="text" id="First" name="First"><br>
+		  Second counter:<br>
+		  <input type="text" id="Second" name="Second"><br>
+		  Third counter:<br>
+		  <input type="text" id="Third" name="Third"><br>
+		  Forth counter:<br>
+		  <input type="text" id="Forth" name="Forth"><br>
+		  Fifth counter:<br>
+		  <input type="text" id="Fifth" name="Fifth"><br>
+		  <div id="task3"></div>
+<br>
+    <button type="button" class="btn btn-warning" onclick="resultTask3()"> Input</button>
+<div id="task3"></div>
+</body>
+</html>
